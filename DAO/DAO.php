@@ -20,10 +20,15 @@ abstract class DAO extends PDO
             ];
 
             $dsn = "mysql:host=" . $_ENV['db']['host'] . ";dbname="
-        }
-        catch (Exception $e)
-        {
+            . ";dbname=" . $_ENV['db']['database'];
 
+            $this->conexao = new PDO(
+            $dsn, $_ENV['db']['user'], 
+            $_ENV['db']['pass'], $options);
+        }
+        catch (PDOException $e)
+        {
+            throw new Exception("Ocorreu um erro ao tentar conectar ao MySQL", 0, $e);
         }
     }
 }
