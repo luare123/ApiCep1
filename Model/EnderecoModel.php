@@ -2,8 +2,8 @@
 
 namespace ApiCep1\Model;
 
-use ApiCep\DAO\EnderecoDAO as DAOEnderecoDAO;
-use App\DAO\EnderecoDAO;
+use ApiCep1\DAO\EnderecoDAO as DAOEnderecoDAO;
+use ApiCep1\DAO\EnderecoDAO;
 use Exception;
 
 class EnderecoModel extends Model

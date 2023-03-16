@@ -1,9 +1,9 @@
 <?php
 
-namespace App\DAO;
+namespace ApiCep1\DAO;
 
-use ApiCep\DAO\DAO;
-use App\Model\EnderecoModel;
+use ApiCep1\DAO\DAO;
+use ApiCep1\Model\EnderecoModel;
 use Exception;
 
 class EnderecoDAO extends DAO

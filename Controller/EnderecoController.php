@@ -3,15 +3,11 @@
 namespace ApiCep\Controller;
 
 use ApiCep1\Model\EnderecoModel as ModelEnderecoModel;
-use App\Model\{ EnderecoModel, CidadeModel };
+use ApiCep1\Model\{ EnderecoModel, CidadeModel };
 use Exception;
 
 class EnderecoController extends Controller
 {
-    public static function getCepByLogradouro() : void
-    {
-    }
-
     public static function getLogradouroByBairroAndCidade() : void
     {
     }
