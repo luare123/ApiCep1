@@ -68,5 +68,6 @@ abstract class Controller
         if(!empty($var_get))
             return (string) $var_get;
         else
+            throw new Exception("Variável $var_get não identificada.");
     }
 }
