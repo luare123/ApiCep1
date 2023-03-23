@@ -1,9 +1,11 @@
 <?php
 
-namespace ApiCep\Controller;
+namespace ApiCep1\Controller;
 
+use ApiCep1\DAO\EnderecoDAO;
 use ApiCep1\Model\EnderecoModel as ModelEnderecoModel;
 use ApiCep1\Model\{ EnderecoModel, CidadeModel };
+
 use Exception;
 
 class EnderecoController extends Controller
